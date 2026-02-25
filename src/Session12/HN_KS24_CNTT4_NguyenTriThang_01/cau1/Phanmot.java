@@ -1,4 +1,4 @@
-package Session12.HN_KS24_CNTT4_NguyenTriThang_02.cau1;
+package Session12.HN_KS24_CNTT4_NguyenTriThang_01.cau1;
 
 
 import java.util.Scanner;

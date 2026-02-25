@@ -1,4 +1,4 @@
-package Session12.HN_KS24_CNTT4_NguyenTriThang_02.cau3;
+package Session12.HN_KS24_CNTT4_NguyenTriThang_01.cau3;
 
 import java.util.Scanner;
 
@@ -21,21 +21,30 @@ public class Main {
             arrB[i] = sc.nextInt();
         }
 
-        for(int i = 0; i <= n; i ++){
+        if (m > n) {
+            System.out.println("Arr B khong la mang con cua arr A");
+            sc.close();
+            return;
+        }
+        boolean isSubArray = false;
+        for (int i = 0; i <= n - m; i++) {
+
             boolean flag = true;
-            for(int j = 0; j < m; j++) {
+            for (int j = 0; j < m; j++) {
                 if (arrA[i + j] != arrB[j]) {
                     flag = false;
                     break;
                 }
             }
-            if(flag) {
-                System.out.println("Arr  B la mang con cua arr A");
-                return;
-            }else{
-                System.out.println("Arr  B khong la mang con cua arr A");
-                return;
+            if (flag) {
+                isSubArray = true;
+                break;
             }
+        }
+        if (isSubArray) {
+            System.out.println("Arr B la mang con cua arr A");
+        } else {
+            System.out.println("Arr B khong la mang con cua arr A");
         }
         sc.close();
     }
