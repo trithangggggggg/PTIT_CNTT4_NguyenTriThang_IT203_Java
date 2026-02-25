@@ -2,7 +2,7 @@ package Session11.btth;
 
 public class Warrior extends GameCharacter implements ISkill{
     private int armor;
-
+    
     public Warrior(int armor) {
         this.armor = armor;
     }
