@@ -22,4 +22,6 @@ public class Book {
         Book b1 = new Book("Lập trình Java cơ bản", "Nguyễn Văn A", 120000);
         b1.displayInfo();
     }
+
+
 }
